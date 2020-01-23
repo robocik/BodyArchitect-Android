@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent" android:paddingRight="20dp" android:baselineAligned="false">
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <com.quasardevelopment.bodyarchitect.client.ui.controls.BAPicture
+                android:id="@+id/image"
+                android:layout_width="64dip"
+                android:layout_height="64dip" />
+
+        <LinearLayout android:background="@drawable/list_selector_holo_dark" android:id="@+id/pnlUserInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView android:id="@+id/tbUsername" android:textColor="@color/accent_color" android:textAllCaps="true" android:textSize="@dimen/large_font" android:text="kox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/tbPoints" android:textSize="@dimen/medium_font"  android:textStyle="bold" android:text="(pkt)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="false"
+						  android:layout_alignParentRight="true"/>
+                <TextView android:id="@+id/tbOffline" android:text="@string/myprofile_offline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="false"
+						  android:layout_alignParentRight="false" android:layout_alignParentLeft="true"/>
+
+                <com.quasardevelopment.bodyarchitect.client.ui.controls.AwardsControl android:id="@+id/ctrlAwards" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/tbStatus" android:textStyle="italic" android:text="(status)" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+
+
+        </LinearLayout>
+
+
+	</LinearLayout>
+
+    <TextView style="@style/LinkButton" android:textSize="@dimen/large_font" android:id="@+id/btnMessages" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+    <TextView style="@style/LinkButton" android:textSize="@dimen/large_font" android:id="@+id/btnInvitations" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+    <TextView style="@style/LinkButton" android:textSize="@dimen/large_font" android:id="@+id/btnSynchronize" android:text="(To sync: 0)" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+	<View  android:layout_width="wrap_content"
+		   android:layout_height="fill_parent" android:layout_weight="1"/>
+
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/pnlButtons" android:orientation="vertical" android:layout_width="wrap_content"  android:layout_height="wrap_content">
+			<TextView style="@style/LinkButton" android:textSize="@dimen/large_font" android:id="@+id/btnStatistics" android:text="@string/myprofile_link_statistics" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			<TextView style="@style/LinkButton" android:textSize="@dimen/large_font" android:id="@+id/btnMyAccount" android:text="@string/myprofile_link_my_account" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+
+		<ImageButton style="@style/FlatImageButton" android:id="@+id/btnEditProfile" android:src="@drawable/content_edit" android:layout_width="wrap_content"
+					 android:layout_height="wrap_content" android:layout_alignParentRight="true"
+					 android:baselineAlignBottom="false" android:layout_alignParentEnd="false"
+					 android:layout_alignParentBottom="false" android:layout_alignBottom="@+id/pnlButtons"/>
+	</RelativeLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

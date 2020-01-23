@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TrainingDaySelectorControl">
+
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+	<declare-styleable name="LabelAccountTypeAwarness">
+		<attr name="android:text"/>
+	</declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean"/>
+        <attr name="layout_horizontalSpacing" format="dimension"/>
+        <attr name="layout_verticalSpacing" format="dimension"/>
+    </declare-styleable>
+
+    <dimen name="huge_font">160sp</dimen>
+	<dimen name="extra_large_font">34sp</dimen>
+	<dimen name="extra_extra_large_font">60sp</dimen>
+	<dimen name="large_font">26sp</dimen><!--CustomFontSizeLarge-->
+	<dimen name="normal_font">16sp</dimen><!--CustomFontSizeNormal-->
+	<dimen name="small_font">14sp</dimen><!--CustomFontSizeSmall-->
+	<dimen name="medium_font">18sp</dimen><!--CustomFontSizeMedium-->
+	<dimen name="medium_large_font">20sp</dimen><!--CustomFontSizeMediumLarge-->
+
+    <dimen name="account_type_height">200dp</dimen>
+    <dimen name="tilebutton">120dp</dimen>
+    <dimen name="tilebutton_margin">12dp</dimen>
+
+    <dimen name="tab_host_default_height">48dp</dimen>
+    <dimen name="header_hight">36dp</dimen>
+    <dimen name="margin_between_label">3dp</dimen>
+    <dimen name="margin_between_controls">12dp</dimen>
+    <dimen name="margin_between_headers">24dp</dimen>
+    <dimen name="margin_in_row">6dp</dimen>
+    <dimen name="margin_screen">3dp</dimen>
+    <dimen name="margin_top">12dp</dimen>
+    <dimen name="list_divider_height">8dp</dimen>
+    <dimen name="margin_label_to_control">3dp</dimen>
+
+
+    <dimen name="margin_main_view_pager_top">220dp</dimen>
+    <dimen name="margin_main_title_indicator_top">120dp</dimen>
+
+
+
+
+</resources>

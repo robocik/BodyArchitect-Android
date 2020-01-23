@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_main_view_pager_top">140dp</dimen>
+    <dimen name="margin_main_title_indicator_top">65dp</dimen>
+
+    <dimen name="huge_font">130sp</dimen>
+    <dimen name="extra_large_font">29sp</dimen>
+    <dimen name="extra_extra_large_font">50sp</dimen>
+    <dimen name="large_font">24sp</dimen><!--CustomFontSizeLarge-->
+    <dimen name="normal_font">16sp</dimen><!--CustomFontSizeNormal-->
+    <dimen name="small_font">14sp</dimen><!--CustomFontSizeSmall-->
+    <dimen name="medium_font">18sp</dimen><!--CustomFontSizeMedium-->
+    <dimen name="medium_large_font">20sp</dimen><!--CustomFontSizeMediumLarge-->
+
+    <dimen name="account_type_height">170dp</dimen>
+    <dimen name="tilebutton">90dp</dimen>
+    <dimen name="tilebutton_margin">6dp</dimen>
+</resources>

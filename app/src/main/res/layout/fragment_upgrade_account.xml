@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:padding="@dimen/margin_screen">
+     <TextView android:layout_marginTop="24dp" android:id="@+id/txtDescription" android:textSize="@dimen/medium_large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnShowPremium" android:text="@string/fragment_upgrade_show_premium_account" style="@style/AccentLinkButton"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnShowInstructor" android:text="@string/fragment_upgrade_show_instructor_account" style="@style/AccentLinkButton"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal">
+		<Button android:id="@+id/btnClose" android:text="@string/button_close" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnChangeAccount" android:text="@string/fragment_upgrade_button_change" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

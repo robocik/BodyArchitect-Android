@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	<TextView style="@style/BATextViewExtraLargeTextView" android:id="@+id/tbExerciseNumber" android:textColor="@color/subtle" android:textSize="@dimen/extra_extra_large_font" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="1"
+              android:layout_marginTop="-6dp"/>
+
+	<LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent"
+				  android:layout_weight="1">
+		<TextView android:layout_width="match_parent" android:id="@+id/tbName" android:layout_height="wrap_content" android:text="exercise name" android:textSize="@dimen/large_font"
+                  android:maxLines="2"/>
+
+		<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+			<TextView android:textColor="@color/accent_color" android:id="@+id/tbExerciseType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="type"/>
+			<TextView android:id="@+id/tbExerciseSets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="type"
+                      android:layout_marginLeft="12dp"/>
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:paddingLeft="28dp" android:gravity="left">
+
+		<TextView android:textStyle="bold" android:textSize="@dimen/extra_large_font"  style="@style/AccentLinkButton"  android:id="@+id/btnBodyInstructor" android:text="@string/main_menu_bodyinstructor" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:singleLine="true" android:gravity="left"/>
+
+        <TextView  android:gravity="left" android:textStyle="bold"  android:textSize="@dimen/extra_large_font" style="@style/LinkButton"  android:id="@+id/btnWorkoutPlans" android:text="@string/main_menu_workoutplans" android:layout_width="wrap_content" android:layout_height="wrap_content"                />
+
+        <TextView android:gravity="left" android:textStyle="bold" android:textSize="@dimen/extra_large_font" style="@style/LinkButton"  android:id="@+id/btnPeople" android:text="@string/main_menu_people" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+		<TextView  android:gravity="left" android:textStyle="bold" android:textSize="@dimen/extra_large_font" style="@style/LinkButton"  android:id="@+id/btnTipsTricks" android:text="@string/main_menu_tips_tricks" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+		<TextView  android:gravity="left" android:textStyle="bold" android:textSize="@dimen/extra_large_font" style="@style/LinkButton"  android:id="@+id/btnMoreFeatures" android:text="@string/main_menu_more_features" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView  android:gravity="left" android:textStyle="bold" android:textSize="@dimen/extra_large_font" style="@style/LinkButton"  android:id="@+id/btnAbout" android:text="@string/main_menu_about" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

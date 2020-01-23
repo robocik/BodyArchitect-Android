@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<LinearLayout android:layout_width="wrap_content" android:orientation="vertical" android:layout_height="match_parent"
+				  android:layout_weight="0">
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.BAPicture style="@style/BAPicture"  android:id="@+id/imgUser"/>
+	</LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent"
+				  android:layout_weight="1" android:layout_marginLeft="@dimen/margin_in_row">
+          <TextView android:id="@+id/tbUsername" android:textSize="@dimen/large_font" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="-6dp"/>
+
+        <LinearLayout android:id="@+id/pnlLastEntry" android:orientation="horizontal" android:layout_height="wrap_content"  android:layout_width="fill_parent">
+            <ImageView android:src="@drawable/calendar_last_entry" android:layout_width="16dp" android:layout_height="16dp" />
+            <TextView android:id="@+id/tbLastEntryDate"  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/margin_between_label"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tbCountry" android:textColor="@color/accent_color" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/tbStatus" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

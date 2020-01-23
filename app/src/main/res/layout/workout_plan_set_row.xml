@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	<TextView style="@style/BATextViewExtraLargeTextView" android:id="@+id/tbSetNumber" android:textColor="@color/subtle" android:textSize="@dimen/extra_extra_large_font" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="1"			  />
+
+	<LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent"
+				  android:layout_weight="1">
+
+		<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+						  android:orientation="vertical">
+				 <TextView android:text="@string/workout_plan_set_row_reps" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+				<TextView android:id="@+id/tbReps" android:text="(reps)" android:textSize="@dimen/extra_large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+						  android:orientation="vertical">
+				<TextView android:id="@+id/tbRepsType" android:text="(reps type)" android:textColor="@color/accent_color" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+				<TextView android:id="@+id/tbDropSet" android:text="(drop set)"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+						  android:orientation="vertical">
+				<TextView android:id="@+id/tbSuperSlow" android:text="SS" android:textColor="@color/accent_color" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+				<TextView android:id="@+id/tbRestPause" android:text="rest pause"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<TextView android:id="@+id/tbDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(descriptio)"/>
+	</LinearLayout>
+</LinearLayout>

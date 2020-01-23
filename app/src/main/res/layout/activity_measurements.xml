@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="fill_parent"  android:layout_height="fill_parent" android:id="@+id/tabHost" >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+        </TabWidget>
+        <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1">
+            <LinearLayout      android:orientation="vertical"
+                               android:id="@+id/measurements_activity_tab_sizes"
+                               android:layout_width="fill_parent"
+                               android:layout_height="fill_parent">
+                <TextView android:id="@+id/entry_activity_header_date" android:text="(20 sierpnia 2013)" style="@style/HeaderStyle"/>
+
+                <com.quasardevelopment.bodyarchitect.client.ui.controls.MeasurementsControl  android:layout_marginRight="6dp"  android:layout_marginLeft="6dp"
+                        android:id="@+id/sizesCtrl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+            </LinearLayout>
+            <ScrollView android:id="@+id/measurements_activity_tab_info"
+                        android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout  android:orientation="vertical"
+                               android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView  android:text="@string/measurements_activity_header_time" style="@style/HeaderStyle"/>
+
+                    <com.quasardevelopment.bodyarchitect.client.ui.controls.MeasurementsTimeControl android:layout_marginRight="6dp"  android:layout_marginLeft="6dp"
+                            android:id="@+id/sizesTimeCtrl"     android:layout_marginTop="6dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"/>
+
+
+					<TextView android:layout_marginTop="24dp"  android:text="@string/set_details_header" style="@style/HeaderStyle"/>
+
+                    <android.support.v7.widget.SwitchCompat android:layout_marginRight="6dp"  android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:text="@string/strength_training_activity_status" android:id="@+id/entry_activity_entry_status"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.SwitchCompat android:layout_marginRight="6dp"  android:layout_marginLeft="6dp" android:layout_marginTop="12dp" android:text="@string/entry_object_activity_show_in_reports" android:id="@+id/entry_activity_report_status"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+
+                    <TextView android:layout_marginRight="6dp"  android:layout_marginLeft="6dp" android:textColor="@color/subtle" android:layout_marginTop="12dp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment"  />
+                    <EditText android:layout_marginRight="6dp"  android:layout_marginLeft="6dp" android:id="@+id/txt_comment" android:layout_width="fill_parent" android:hint="@string/comment_watermark" android:layout_height="100dip" android:inputType="textMultiLine"/>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+													android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</TabHost>

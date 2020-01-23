@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+    <com.quasardevelopment.bodyarchitect.client.ui.controls.TimerControl android:id="@+id/ctrlTimer"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"/>
+
+
+    <TextView style="@style/CustomTextTitle2Style" android:layout_marginLeft="3dp"  android:id="@+id/strenght_training_item_exercise" android:layout_width="wrap_content"  android:layout_height="wrap_content" />
+	<TextView android:id="@+id/strenght_training_activity_empty_sets" android:layout_marginTop="24dp" android:layout_marginLeft="3dp" android:text="@string/strength_training_item_activity_empty_sets" android:textSize="@dimen/large_font" android:layout_width="wrap_content"  android:layout_height="fill_parent"
+              android:layout_weight="1"/>
+
+	<com.quasardevelopment.bodyarchitect.client.ui.controls.BAListView  style="@style/BAListView" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:layout_marginTop="24dp"  android:id="@+id/strenght_training_item_activity_lst_sets" dslv:drag_enabled="false"  dslv:drag_handle_id="@id/drag_handle"
+			  android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" />
+
+
+	<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+												android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

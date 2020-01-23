@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+		 android:layout_width="fill_parent"  android:layout_height="fill_parent" android:id="@+id/tabHost" >
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		<TabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+		</TabWidget>
+		<FrameLayout
+				android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_weight="1">
+			<ScrollView android:id="@+id/tab_workout"
+						android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<LinearLayout      android:orientation="vertical"
+								   android:layout_width="fill_parent"
+								   android:layout_height="fill_parent">
+
+					<LinearLayout android:orientation="horizontal"  android:background="@color/semi_transparent_accent_color"
+								  android:layout_width="fill_parent"
+								  android:layout_height="48dp">
+						<TextView android:textSize="@dimen/large_font" android:id="@+id/tbHeader" android:layout_width="fill_parent" android:layout_height="wrap_content"
+								  android:layout_weight="1" android:layout_gravity="center_vertical"/>
+						<ImageView android:id="@+id/imgGpsSignal" android:src="@drawable/gps_no_signal" android:layout_width="16dp" android:layout_height="16dp"
+								   android:layout_alignParentRight="true" android:layout_centerVertical="true"
+								   android:layout_gravity="center_vertical"/>
+					</LinearLayout>
+
+					<Button android:id="@+id/btnChooseActivity" style="@style/LinkButton" android:textSize="@dimen/extra_large_font" android:text="@string/gps_tracker_button_exercise"  android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:layout_marginTop="12dp" android:textStyle="bold"/>
+
+					<LinearLayout android:visibility="gone" android:orientation="vertical" android:id="@+id/pnlWorkoutData" android:layout_width="fill_parent" android:layout_height="fill_parent"
+								  android:layout_marginLeft="3dp" android:layout_marginRight="3dp">
+						  <TextView android:text="@string/gps_tracker_duration" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_marginTop="6dp"/>
+						<TextView android:id="@+id/tbDuration" android:text="00:00:00" android:textSize="@dimen/extra_extra_large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"
+								  android:layout_marginTop="-8dp"/>
+
+						<RelativeLayout  android:layout_width="fill_parent" android:layout_height="wrap_content">
+							<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<TextView android:text="@string/gps_tracker_distance" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+									<TextView  android:id="@+id/tbDistance" android:text="0.00" android:textSize="@dimen/extra_large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+								</LinearLayout>
+								<TextView  android:id="@+id/tbDistanceType" android:text="km"  android:layout_width="wrap_content" android:layout_height="wrap_content"
+										  android:layout_gravity="bottom"
+										  android:layout_marginLeft="3dp" android:layout_marginBottom="3dp"/>
+							</LinearLayout>
+
+							<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+								<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+									<TextView android:text="@string/gps_tracker_speed" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+									<TextView  android:id="@+id/tbSpeed" android:text="0.00" android:textSize="@dimen/extra_large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+								</LinearLayout>
+								<TextView  android:id="@+id/tbSpeedType" android:text="km/h"  android:layout_width="wrap_content" android:layout_height="wrap_content"
+										  android:layout_gravity="bottom"
+										  android:layout_marginBottom="3dp" android:layout_marginLeft="3dp"/>
+							</LinearLayout>
+						</RelativeLayout>
+
+
+						<RelativeLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+										 android:layout_marginTop="12dp">
+							<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<TextView android:text="@string/gps_tracker_calories" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+								<TextView  android:id="@+id/tbCalories" android:text="0" android:textColor="@color/accent_color" android:textSize="@dimen/extra_large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+							</LinearLayout>
+
+							<ImageButton android:id="@+id/btnStart" android:src="@drawable/av_play" android:layout_width="172dp" android:layout_height="172dp" android:layout_alignParentRight="true"/>
+						</RelativeLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+
+			<ScrollView android:id="@+id/tab_info" android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<LinearLayout      android:orientation="vertical"
+								   android:layout_width="fill_parent"
+								   android:layout_height="fill_parent">
+					<TextView  android:text="details" style="@style/HeaderStyle"/>
+					<TextView android:layout_marginTop="12dp" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:textColor="@color/subtle"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/strength_training_activity_mood"  />
+					<com.quasardevelopment.bodyarchitect.client.ui.controls.MoodButton  android:id="@+id/ctrlMood" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+					<android.support.v7.widget.SwitchCompat android:layout_marginTop="24dp" marginLeft="3dp" android:layout_marginRight="3dp" android:text="@string/entry_object_activity_show_in_reports" android:id="@+id/entry_activity_report_status"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+                    <TextView android:layout_marginTop="24dp" android:textColor="@color/subtle"  marginLeft="6dp" android:layout_marginRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment"  />
+					<EditText android:id="@+id/txtComment" marginLeft="3dp" android:layout_marginRight="3dp" android:layout_width="fill_parent" android:hint="@string/comment_watermark" android:layout_height="100dip" android:inputType="textMultiLine"/>
+				</LinearLayout>
+			</ScrollView>
+
+			<ScrollView android:id="@+id/tab_summary"
+						android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<LinearLayout      android:orientation="vertical"
+								   android:layout_width="fill_parent"
+								   android:layout_height="fill_parent">
+
+					<TextView android:id="@+id/tbSummaryHeader" android:text="(time)" style="@style/HeaderStyle"/>
+
+					<TextView android:textSize="@dimen/extra_large_font" android:textStyle="bold" android:id="@+id/tbSummaryExercise" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="6dp"/>
+
+					<TextView android:textColor="@color/subtle" android:text="@string/gps_tracker_duration" android:id="@+id/tbSummaryDurationLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="12dp"/>
+					<TextView android:textSize="@dimen/extra_extra_large_font" android:id="@+id/tbSummaryDuration" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="-6dp"/>
+
+					<TextView android:textColor="@color/subtle" android:text="@string/gps_tracker_distance" android:id="@+id/tbSummaryDistanceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="6dp"/>
+					<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<TextView android:textSize="@dimen/extra_extra_large_font" android:id="@+id/tbSummaryDistance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+						<TextView android:text="(distance type)" android:id="@+id/tbSummaryDistanceType" android:layout_width="wrap_content" android:layout_height="wrap_content"
+								  android:layout_marginLeft="3dp"/>
+					</LinearLayout>
+
+					<TextView android:textColor="@color/subtle" android:text="@string/gps_tracker_calories" android:id="@+id/tbSummaryCaloriesLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="6dp"/>
+					<TextView android:textSize="@dimen/extra_large_font" android:id="@+id/tbSummaryCalories" android:textColor="@color/accent_color" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+					<TextView android:textColor="@color/subtle" android:text="@string/gps_tracker_max_speed" android:id="@+id/tbSummaryMaxSpeedLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="6dp"/>
+					<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<TextView android:textSize="@dimen/extra_large_font" android:id="@+id/tbSummaryMaxSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+						<TextView android:text="(speed type)" android:id="@+id/tbSummaryMaxSpeedType" android:layout_width="wrap_content" android:layout_height="wrap_content"
+								  android:layout_marginLeft="3dp"/>
+					</LinearLayout>
+
+					<TextView android:textColor="@color/subtle" android:text="@string/gps_tracker_avg_speed" android:id="@+id/tbSummaryAvgSpeedLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="6dp"/>
+					<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<TextView android:textSize="@dimen/extra_large_font" android:id="@+id/tbSummaryAvgSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+						<TextView android:text="(speed type)" android:id="@+id/tbSummaryAvgSpeedType" android:layout_width="wrap_content" android:layout_height="wrap_content"
+								  android:layout_marginLeft="3dp"/>
+					</LinearLayout>
+
+					<TextView android:textColor="@color/subtle" android:text="@string/gps_tracker_avg_pace" android:id="@+id/tbSummaryAvgPaceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="6dp"/>
+					<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<TextView android:textSize="@dimen/extra_large_font" android:id="@+id/tbSummaryAvgPace" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+						<TextView android:text="(speed type)" android:id="@+id/tbSummaryAvgPaceType" android:layout_width="wrap_content" android:layout_height="wrap_content"
+								  android:layout_marginLeft="3dp"/>
+					</LinearLayout>
+
+
+					<TextView android:textColor="@color/subtle" android:text="@string/gps_tracker_weather" android:id="@+id/tbSummaryWeatherLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="6dp"/>
+					<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+							>
+						<TextView android:textSize="@dimen/extra_large_font" android:id="@+id/tbSummaryTemperature" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+						<TextView android:text="(speed type)" android:id="@+id/tbSummaryTemperatureType" android:layout_width="wrap_content" android:layout_height="fill_parent"
+								  android:layout_marginLeft="3dp" android:layout_gravity="top"
+								  android:layout_marginTop="6dp"/>
+						<ImageView android:id="@+id/imgWeather" android:layout_width="32dp" android:layout_height="32dp"
+								   android:layout_marginLeft="3dp" android:layout_gravity="bottom"/>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+		</FrameLayout>
+
+
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+													android:layout_gravity="center_horizontal"/>
+	</LinearLayout>
+</TabHost>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <ScrollView  android:layout_width="fill_parent"  android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="fill_parent">
+			<TextView android:id="@+id/empty_measurements" android:text="@string/measurements_control_empty" android:textSize="@dimen/large_font" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+			<TableLayout android:id="@+id/pnlMeasurements" android:layout_width="fill_parent"  android:layout_height="fill_parent">
+				<TableRow  android:layout_width="wrap_content"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_weight"/>
+					<EditText android:textSize="@dimen/medium_font"  android:layout_width="120dp"  android:id="@+id/txt_weight" style="@style/NumericEditText"
+							   android:layout_weight="1"  />
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_weight_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_weight_change" android:layout_marginLeft="6dp" />
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_height"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent" android:inputType="number"  android:id="@+id/txt_height" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_height_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_height_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_chest"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent"  android:id="@+id/txt_chest" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_chest_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_chest_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_abs"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent"  android:id="@+id/txt_abs" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_abs_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_abs_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_right_biceps"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent"  android:id="@+id/txt_right_biceps" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_right_biceps_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_right_biceps_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_left_biceps"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent"  android:id="@+id/txt_left_biceps" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_left_biceps_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_left_biceps_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_right_forearm"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent"  android:id="@+id/txt_right_forearm" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_right_forearm_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_right_forearm_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_left_forearm"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent"  android:id="@+id/txt_left_forearm" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_left_forearm_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_left_forearm_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_right_leg"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent"  android:id="@+id/txt_right_leg" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_right_leg_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_right_leg_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+				<TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+					<TextView android:textColor="@color/subtle" android:text="@string/measurements_control_left_leg"/>
+					<EditText android:textSize="@dimen/medium_font" android:layout_width="fill_parent"  android:id="@+id/txt_left_leg" style="@style/NumericEditText" android:layout_weight="1"/>
+					<TextView android:textColor="@color/subtle" android:id="@+id/tb_left_leg_type" android:text="kg"/>
+					<TextView android:textSize="@dimen/medium_font" android:id="@+id/tb_left_leg_change" android:layout_marginLeft="6dp"/>
+				</TableRow>
+			</TableLayout>
+		</LinearLayout>
+
+    </ScrollView>
+    <!--<ScrollView android:layout_width="fill_parent"  android:layout_height="fill_parent">-->
+        <!--&lt;!&ndash;<TextView android:layout_width="wrap_content"  android:layout_height="wrap_content"/>&ndash;&gt;-->
+        <!---->
+    <!--</ScrollView>-->
+
+
+</merge>

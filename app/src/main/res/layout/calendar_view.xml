@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"    android:orientation="vertical"
+			  android:layout_height="fill_parent">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/header"
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					  android:layout_width="fill_parent"
+					  android:layout_height="wrap_content"
+					  android:gravity="left">
+			<TextView
+					android:id="@+id/previous"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:padding="5dp"
+					android:paddingLeft="5dp"
+					android:textSize="@dimen/large_font"
+					android:textStyle="bold"
+					android:gravity="center_horizontal"
+					android:text="&lt;&lt;"
+                    android:textColor="@color/main_fg"
+					android:clickable="true"
+					/>
+		</LinearLayout>
+
+		<TextView
+				android:id="@+id/title"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:padding="5dp"
+				android:paddingLeft="5dp"
+				android:textSize="@dimen/large_font"
+				android:textStyle="bold"
+				android:gravity="center_horizontal"
+                android:textColor="@color/main_fg"
+				/>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					  android:layout_width="fill_parent"
+					  android:layout_height="wrap_content"
+					  android:gravity="right"
+					  android:layout_toRightOf="@+id/title"
+				>
+			<TextView
+					android:id="@+id/next"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:padding="5dp"
+					android:paddingLeft="5dp"
+					android:textSize="@dimen/large_font"
+					android:textStyle="bold"
+					android:gravity="center_horizontal"
+					android:text=">>"
+                    android:textColor="@color/main_fg"
+					android:clickable="true"
+					/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:id="@+id/gvDaysOfWeek"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+
+			  android:numColumns="7"
+			  android:verticalSpacing="2dp"
+			  android:horizontalSpacing="2dp"
+			  android:stretchMode="columnWidth"
+			  android:gravity="center"
+			/>
+
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:id="@+id/gridview"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+
+			  android:numColumns="7"
+			  android:verticalSpacing="0dp"
+			  android:horizontalSpacing="0dp"
+			  android:stretchMode="columnWidth"
+
+			  android:gravity="center"
+			  android:layout_weight="1"/>
+	<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+												android:layout_gravity="center_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+			android:layout_height="match_parent">
+	<LinearLayout android:orientation="vertical"
+				  android:layout_width="match_parent"
+				  android:layout_height="match_parent">
+		<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+			<com.quasardevelopment.bodyarchitect.client.ui.controls.BAPicture android:id="@+id/imgUser" android:layout_width="100dip" android:layout_height="100dip"/>
+			<TextView  android:id="@+id/tbStatus" android:textStyle="italic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+		</LinearLayout>
+
+
+		<TextView  android:text="@string/customer_info_general_fullname" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+		<TextView  android:id="@+id/tbUsername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+
+		<LinearLayout android:id="@+id/pnlVirtualCustomer" android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			 <ImageView android:src="@drawable/virtual_customer" android:layout_width="16dip" android:layout_height="16dip"/>
+			<TextView android:text="@string/customer_info_general_virtual_customer" android:textColor="@color/accent_color"  android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+		<TextView  android:text="@string/profile_edit_activity_gender" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+		<TextView  android:id="@+id/tbGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+
+		<TextView  android:id="@+id/tbLabelBirthday" android:text="@string/create_profile_birthday" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+		<TextView  android:id="@+id/tbBirthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+
+		<TextView  android:id="@+id/tbLabelEmail" android:text="@string/create_profile_email" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+		<TextView  android:id="@+id/tbEmail" android:textColorLink="@color/accent_color" android:autoLink="email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+
+		<TextView  android:id="@+id/tbLabelPhone" android:text="@string/customer_info_general_phone" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+		<TextView  android:id="@+id/tbPhone" android:textColorLink="@color/accent_color" android:autoLink="phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+
+		<TextView  android:text="@string/profile_info_general_fragment_account_created_date" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+		<TextView  android:id="@+id/tbDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+
+		<Button style="@style/LinkButton" android:id="@+id/btnShowCalendar" android:textSize="@dimen/large_font" android:text="@string/profile_info_general_fragment_button_show_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <!--<TextView  android:id="@+id/tbLastEntryDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/accent_color"-->
+                   <!--android:layout_marginTop="-8dp"/>-->
+
+	</LinearLayout>
+</ScrollView>

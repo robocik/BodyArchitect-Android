@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="SetType_Normalna" translatable="false"></string>
+	<string name="SetType_Rozgrzewkowa">Warm up</string>
+	<string name="SetType_PrawieMax">Almost max</string>
+	<string name="SetType_Max">Max</string>
+	<string name="SetType_MuscleFailure">Muscle failure</string>
+
+    <string name="SetType_Long_Normalna">Normal</string>
+    <string name="SetType_Long_Rozgrzewkowa">Warm up</string>
+    <string name="SetType_Long_PrawieMax">Almost max</string>
+    <string name="SetType_Long_Max">Max</string>
+    <string name="SetType_Long_MuscleFailure">Muscle failure</string>
+
+    <string name="Intensity_NotSet">Not set</string>
+    <string name="Intensity_Low">Low</string>
+    <string name="Intensity_Medium">Medium</string>
+    <string name="Intensity_Hight">High</string>
+    <string name="Mood_Normal">Normal</string>
+    <string name="Mood_Good">Good</string>
+    <string name="Mood_Bad">Bad</string>
+    <string name="DropSetType_None">None</string>
+    <string name="DropSetType_IDropSet">1 dropset</string>
+    <string name="DropSetType_IIDropSet">2 dropsets</string>
+    <string name="DropSetType_IIIDropSet">3 dropsets</string>
+    <string name="DropSetType_IVDropSet">4 dropsets</string>
+    <string name="DosageType_Grams">g</string>
+    <string name="DosageType_Tablets">tablets</string>
+    <string name="DosageType_Units">units</string>
+    <string name="DosageType_Servings">servings</string>
+    <string name="DosageType_MiliGrams">mg</string>
+
+    <string name="TimeType_NotSet" translatable="false"></string>
+    <string name="TimeType_OnEmptyStomach">On empty stomach</string>
+    <string name="TimeType_BeforeWorkout">Before workout</string>
+    <string name="TimeType_AfterWorkout">After workout</string>
+    <string name="TimeType_BeforeSleep">Before sleep</string>
+    <string name="ExerciseDoneWay_Default">Default</string>
+    <string name="ExerciseDoneWay_Barbell">Barbell</string>
+    <string name="ExerciseDoneWay_Dumbbell">Dumbbell</string>
+    <string name="ExerciseDoneWay_Cable">Cable</string>
+    <string name="ExerciseDoneWay_Machine">Machine</string>
+
+    <string name="Privacy_Private">Private</string>
+    <string name="Privacy_FriendsOnly">Friends only</string>
+    <string name="Privacy_Public">Public</string>
+
+	<string name="MessagePriority_Normal">Normal</string>
+	<string name="MessagePriority_Low">Low</string>
+	<string name="MessagePriority_High">High</string>
+	<string name="MessagePriority_System">System</string>
+
+    <string name="Gender_NotSet">(not set)</string>
+    <string name="Gender_Male">Male</string>
+    <string name="Gender_Female">Female</string>
+
+	<string name="AchievementRank_Rank1" translatable="false"></string>
+	<string name="AchievementRank_Rank2">Beginner</string>
+	<string name="AchievementRank_Rank3">Resident</string>
+	<string name="AchievementRank_Rank4">Maniac</string>
+	<string name="AchievementRank_Rank5">Expert</string>
+	<string name="AchievementRank_Rank6">Veteran</string>
+
+    <string name="TrainingPlanDifficult_NotSet">(Not set)</string>
+    <string name="TrainingPlanDifficult_Beginner">Beginner</string>
+    <string name="TrainingPlanDifficult_Advanced">Advanced</string>
+    <string name="TrainingPlanDifficult_Professional">Professional</string>
+
+    <string name="TrainingType_Split">Split</string>
+    <string name="TrainingType_FBW">FBW</string>
+    <string name="TrainingType_HIT">HIT</string>
+    <string name="TrainingType_ABW">ABW</string>
+    <string name="TrainingType_HST">HST</string>
+    <string name="TrainingType_PushPull">PushPull</string>
+    <string name="TrainingType_ACT">ACT</string>
+    <string name="TrainingType_Other">Other</string>
+
+    <string name="WorkoutPlanPurpose_NotSet">(Not set)</string>
+    <string name="WorkoutPlanPurpose_Strength">Strength</string>
+    <string name="WorkoutPlanPurpose_Mass">Mass</string>
+    <string name="WorkoutPlanPurpose_FatLost">FatLost</string>
+    <string name="WorkoutPlanPurpose_Definition">Definition</string>
+    <string name="WorkoutPlanPurpose_Other">Other</string>
+
+    <string name="AccountType_User">Basic</string>
+    <string name="AccountType_PremiumUser">Premium</string>
+    <string name="AccountType_Instructor">Instructor</string>
+    <string name="AccountType_Administrator">Administrator</string>
+
+	<string name="ExerciseType_NotSet">Not set</string>
+	<string name="ExerciseType_Biceps">Biceps</string>
+	<string name="ExerciseType_Klatka">Chest</string>
+	<string name="ExerciseType_Plecy">Back</string>
+	<string name="ExerciseType_Triceps">Triceps</string>
+	<string name="ExerciseType_Barki">Shoulders</string>
+	<string name="ExerciseType_Nogi">Hamstrings</string>
+	<string name="ExerciseType_Lydki">Calves</string>
+	<string name="ExerciseType_Przedramie">Forearm</string>
+	<string name="ExerciseType_Brzuch">Abs</string>
+	<string name="ExerciseType_Czworoboczny">Traps</string>
+	<string name="ExerciseType_Cardio">Cardio</string>
+
+	<string name="ExerciseForceType_NotSet">(Not set)</string>
+	<string name="ExerciseForceType_Push">Push</string>
+	<string name="ExerciseForceType_Pull">Pull</string>
+	<string name="ExerciseForceType_Static">Static</string>
+
+	<string name="MechanicsType_NotSet">(Not set)</string>
+	<string name="MechanicsType_Compound">Compound</string>
+	<string name="MechanicsType_Isolation">Isolation</string>
+
+	<string name="ExerciseDifficult_NotSet">(Not set)</string>
+	<string name="ExerciseDifficult_One">One</string>
+	<string name="ExerciseDifficult_Two">Two</string>
+	<string name="ExerciseDifficult_Three">Three</string>
+	<string name="ExerciseDifficult_Four">Four</string>
+
+    <string name="MergeState_None">Waiting</string>
+    <string name="MergeState_Processing">Processing</string>
+    <string name="MergeState_Finished">Finished</string>
+    <string name="MergeState_Error">Error</string>
+
+</resources>

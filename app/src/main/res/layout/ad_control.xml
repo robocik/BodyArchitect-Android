@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				  android:orientation="horizontal"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content">
+		<com.google.android.gms.ads.AdView android:id="@+id/adView"
+							   android:layout_width="wrap_content"
+							   android:layout_height="wrap_content"
+							   ads:adUnitId="ca-app-pub-6343569652464520/2717956297"
+							   ads:adSize="SMART_BANNER" android:layout_centerHorizontal="true"/>
+		<ImageButton android:id="@+id/btnRemoveAds" android:background="@drawable/list_selector_holo_dark" android:layout_width="20dp"
+					 android:layout_height="20dp"  android:src="@drawable/close" android:layout_marginLeft="-20dp"/>
+	</LinearLayout>
+</merge>
+

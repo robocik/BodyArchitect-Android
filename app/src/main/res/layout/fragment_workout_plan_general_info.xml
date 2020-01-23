@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:paddingTop="12dp" android:paddingLeft="3dp"
+                  android:paddingRight="3dp" android:paddingBottom="3dp">
+           <TextView android:id="@+id/tbName" android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" android:textSize="@dimen/large_font"
+                     android:paddingTop="12dp"/>
+
+        <LinearLayout android:orientation="horizontal"   android:layout_width="match_parent" android:layout_height="wrap_content">
+             <ImageView android:id="@+id/imgStatus" android:layout_width="32dip" android:layout_height="32dip"
+                        android:layout_gravity="center_vertical"/>
+            <RatingBar android:layout_width="wrap_content" android:layout_height="44dp" android:stepSize="0.5"
+                    android:id="@+id/rating" android:layout_gravity="center_vertical|right" android:numStars="6"
+                    style="?android:attr/ratingBarStyle" android:isIndicator="true"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                      android:layout_marginTop="12dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                          android:layout_weight="1">
+                <TextView android:textColor="@color/subtle" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font" android:text="@string/workout_plan_general_difficult" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tbDifficult" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font" android:text="@string/not_set_bracket" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                          android:layout_weight="1">
+                <TextView android:textColor="@color/subtle" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font" android:text="@string/workout_plan_general_type" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tbTrainingType" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font" android:textColor="@color/accent_color" android:text="(type)" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                      android:layout_marginTop="12dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                          android:layout_weight="1">
+                <TextView android:textColor="@color/subtle" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font" android:text="@string/workout_plan_general_author" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+                <com.quasardevelopment.bodyarchitect.client.ui.controls.BAPicture android:id="@+id/imgUser"  android:layout_width="32dip"  android:layout_height="32dip"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                          android:layout_weight="1">
+                <TextView android:textColor="@color/subtle" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font" android:text="@string/workout_plan_general_purpose" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tbPurpose" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font"  android:text="(purpose)" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                      android:layout_marginTop="12dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                          android:layout_weight="1">
+                <TextView android:textColor="@color/subtle" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font" android:text="@string/workout_plan_general_created_date" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tbCreatedDate" android:maxLines="1" android:ellipsize="end" android:text="(date)" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                          android:layout_weight="1">
+                <TextView android:textColor="@color/subtle" android:maxLines="1" android:ellipsize="end" android:textSize="@dimen/large_font" android:text="@string/workout_plan_general_publication_date" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tbPublicationDate" android:maxLines="1"  android:ellipsize="end" android:text="(date)" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+			<TextView android:autoLink="web" android:id="@+id/tbUrl" android:maxLines="1" android:textColor="@color/accent_color" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+    </LinearLayout>
+</ScrollView>

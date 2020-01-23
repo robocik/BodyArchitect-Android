@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:paddingLeft="8dp" android:paddingRight="8dp"
+                  paddingBottom="8dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.quasardevelopment.bodyarchitect.client.ui.controls.BAPicture style="@style/BAPicture"  android:id="@+id/imgUser"/>
+            <TextView android:id="@+id/tbUsername" android:layout_marginLeft="8dp" android:text="(user name)" android:textSize="@dimen/extra_large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView android:layout_marginTop="24dp" android:text="@string/send_message_activity_priority" android:textColor="@color/accent_color" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cmbPriority"/>
+
+        <TextView android:layout_marginTop="24dp" android:text="@string/send_message_activity_topic" android:textColor="@color/accent_color" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText   android:id="@+id/txtTopic"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+        <TextView android:layout_marginTop="24dp" android:text="@string/send_message_activity_content" android:textColor="@color/accent_color" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText  android:id="@+id/txtContent" android:layout_width="fill_parent" android:layout_height="100dp" />
+
+        <Button android:layout_marginTop="24dp" android:text="@string/send_message_activity_button_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnSend"
+                android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout android:id="@+id/progressPane"
+                      android:layout_width="fill_parent"  android:visibility="gone"
+                      android:layout_height="match_parent" android:orientation="vertical">
+            <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center" android:indeterminate="true"/>
+            <TextView
+                    android:text="@string/progress_sending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center">
+            </TextView>
+
+
+
+        </LinearLayout>
+        <View android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="wrap_content"/>
+        <com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>

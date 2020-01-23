@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto"
+		 android:layout_width="fill_parent"  android:layout_height="fill_parent" android:id="@+id/tabHost" >
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		<TabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+		</TabWidget>
+		<FrameLayout
+				android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_weight="1">
+			<LinearLayout android:id="@+id/pnlWorkoutPlanEntrySets" android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<TextView android:id="@+id/tbEmptyMessages" android:layout_marginTop="@dimen/margin_top" android:text="@string/workout_plan_entry_empty_sets_message" android:textSize="@dimen/large_font" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+				<com.quasardevelopment.bodyarchitect.client.ui.controls.BAListView android:layout_marginTop="6dp" style="@style/BAListView"
+															 android:id="@+id/lstSets"
+															 android:layout_width="fill_parent" android:layout_height="fill_parent" dslv:drag_handle_id="@id/drag_handle"/>
+			</LinearLayout>
+
+			<LinearLayout android:layout_marginLeft="@dimen/margin_screen" android:layout_marginRight="@dimen/margin_screen" android:orientation="vertical" android:id="@+id/pnlWorkoutPlanEntryDetails" android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<LinearLayout android:layout_marginTop="12dp" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="@string/workout_plan_entry_rest_time" android:textSize="@dimen/large_font" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+					<TextView android:layout_marginLeft="@dimen/margin_between_label" android:id="@+id/tbRestTime" android:text="(time)" android:textSize="@dimen/large_font" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+				</LinearLayout>
+				<TextView android:id="@+id/tbDescription" android:layout_marginTop="@dimen/margin_between_controls" android:text="@string/workout_plan_entry_empty_description_message"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			</LinearLayout>
+		</FrameLayout>
+
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+													android:layout_gravity="center_horizontal"/>
+	</LinearLayout>
+</TabHost>

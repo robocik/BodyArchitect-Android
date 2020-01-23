@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	<ScrollView  android:layout_width="match_parent" android:layout_height="wrap_content">
+		<LinearLayout android:orientation="vertical"
+					  android:layout_width="match_parent"
+					  android:layout_height="match_parent">
+			<TextView android:textColor="@color/main_fg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_feature_description" android:textSize="@dimen/medium_font"/>
+
+			<TextView  android:text="http://bodyarchitectonline.com" android:layout_width="wrap_content" android:layout_height="wrap_content"
+					  android:autoLink="web" android:textSize="@dimen/medium_font" android:layout_marginTop="@dimen/margin_between_headers" android:textColorLink="@color/accent_color"/>
+
+            <TextView  android:text="@string/more_activity_tutorial_link"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnTutorial"
+                       android:textSize="@dimen/medium_font" android:layout_marginTop="@dimen/margin_between_controls" android:textColor="@color/accent_color"/>
+
+		</LinearLayout>
+	</ScrollView>
+	<View android:layout_width="match_parent"
+		  android:layout_height="match_parent" android:layout_weight="1"/>
+
+	<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+												android:layout_gravity="center_horizontal"/>
+	</LinearLayout>

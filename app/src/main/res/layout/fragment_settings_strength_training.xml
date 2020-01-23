@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+			android:layout_height="match_parent">
+	<LinearLayout android:orientation="vertical"
+				  android:layout_width="match_parent"
+				  android:layout_height="match_parent">
+		<TextView android:text="@string/settings_strength_training_fragment_header_strength_training" style="@style/HeaderStyle"/>
+
+		<TextView style="@style/SmallLabel" android:layout_marginTop="@dimen/margin_between_controls" android:text="@string/settings_strength_training_fragment_sort_exercises" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+		<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cmbSortExercises"/>
+		<TextView android:text="@string/settings_strength_training_fragment_sort_exercises_description" android:textColor="@color/subtle" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+		<TextView style="@style/SmallLabel" android:layout_marginTop="@dimen/margin_between_headers" android:text="@string/settings_strength_training_fragment_copy_data" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+		<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cmbCopySetsData"/>
+		<TextView android:text="@string/settings_strength_training_fragment_copy_data_description" android:textColor="@color/subtle" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+		<android.support.v7.widget.SwitchCompat android:layout_marginTop="@dimen/margin_between_headers" android:text="@string/settings_strength_training_fragment_copy_new_sets" android:id="@+id/twCopyValuesForNewSet"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TextView android:text="@string/settings_strength_training_fragment_copy_new_sets_description" android:textColor="@color/subtle" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+		<android.support.v7.widget.SwitchCompat android:layout_marginTop="@dimen/margin_between_headers" android:text="@string/settings_strength_training_fragment_superset_as_one" android:id="@+id/twSupersetAsOne"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TextView android:text="@string/settings_strength_training_fragment_superset_as_one_description" android:textColor="@color/subtle" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+		<android.support.v7.widget.SwitchCompat android:layout_marginTop="@dimen/margin_between_headers" android:text="@string/settings_strength_training_fragment_start_global_timer" android:id="@+id/tsStartTimer"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TextView android:text="@string/settings_strength_training_fragment_start_global_timer_description" android:textColor="@color/subtle" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+	</LinearLayout>
+</ScrollView>

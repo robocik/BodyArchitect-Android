@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants"
+			  android:orientation="horizontal"  android:layout_width="match_parent"
+			  android:layout_height="match_parent" android:background="@color/accent_color">
+
+	<TextView android:id="@+id/tbName" android:text="(name)" android:textColor="@color/alternate_fg" android:textSize="@dimen/large_font" android:layout_width="match_parent" android:layout_height="wrap_content"
+			  android:layout_marginLeft="40dip" android:layout_weight="1" android:layout_gravity="center_vertical"/>
+
+	<ImageButton style="@style/FlatImageButton" android:src="@drawable/content_new" android:id="@+id/btnAdd" android:focusable="false"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

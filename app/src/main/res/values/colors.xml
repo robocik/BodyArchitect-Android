@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="titlebackgroundcolor">#3232CD</color>
+	<color name="titletextcolor">#FFFF00</color>
+    <color name="main_bg">#000000</color>
+	<color name="main_low_bg">#404040</color>
+	<color name="alternate_fg">#000000</color>
+	<color name="main_fg">#FFFFFF</color>
+	<color name="subtle">#99FFFFFF</color>
+	<color name="accent_color">#FF2A9586</color>
+	<color name="semi_transparent_accent_color">#7F2A9586</color>                <!--opacity 0.5-->
+
+
+</resources>

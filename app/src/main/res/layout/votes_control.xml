@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <TextView android:id="@+id/votes_control_empty" android:text="@string/votes_control_empty_message" android:textSize="@dimen/large_font" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+        <ListView android:id="@+id/votes_control_ratings_list" style="@style/BAListView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+				  android:layout_weight="1" android:dividerHeight="@dimen/list_divider_height"/>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ProgressPane"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="0">
+            <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar" android:layout_gravity="center" android:indeterminate="true"/>
+            <TextView
+                    android:text="@string/progress_retrieving_items"
+                    android:id="@+id/tbProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</merge>

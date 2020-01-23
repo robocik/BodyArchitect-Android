@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--<style name="customTheme" parent="Theme.Sherlock.Light.DarkActionBar">-->
+		<!--<item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>-->
+		<!--&lt;!&ndash;<item name="android:windowActionBar">false</item>&ndash;&gt;-->
+        <!--<item name="actionBarSize">50dip</item>-->
+        <!--<item name="android:actionBarSize">50dip</item>-->
+        <!--<item name="android:titleTextStyle">@style/Theme.MyAppTheme.ActionBar.TitleTextStyle</item>-->
+        <!--<item name="titleTextStyle">@style/Theme.MyAppTheme.ActionBar.TitleTextStyle</item>-->
+	<!--</style>-->
+
+    <!--<style name="Theme.MyAppTheme.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">-->
+        <!--<item name="android:textColor">#fff</item>-->
+        <!--&lt;!&ndash;<item name="android:textStyle">normal</item>&ndash;&gt;-->
+        <!--<item name="android:textSize">32sp</item>-->
+    <!--</style>-->
+
+    <style name="Theme.Styled" parent="Theme.AppCompat">
+
+    </style>
+
+	<style name="BADialog" parent="android:Theme.Holo.Dialog">
+		<item name="android:editTextBackground">@drawable/edit_text_holo_dark</item>
+
+		<item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+
+		<item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_dark</item>
+
+		<item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_holo_dark</item>
+
+        <item name="android:spinnerStyle">@style/spinnerStyle</item>
+
+		<item name="android:tabWidgetStyle">@style/TabWidgetAppTheme</item>
+
+		<item name="android:progressBarStyleHorizontal">@style/ProgressBarAppTheme</item>
+
+		<item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+
+        <item name="android:textViewStyle">@style/NormalTextView</item>
+
+		<item name="android:ratingBarStyle">@style/RatingBarAppTheme</item>
+
+		<item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppTheme</item>
+
+		<item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppTheme</item>
+
+		<item name="android:buttonStyleToggle">@style/ToggleAppTheme</item>
+
+		<item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_dark</item>
+
+		<item name="android:activatedBackgroundIndicator">@drawable/activated_background_holo_dark</item>
+
+		<item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb_holo</item>
+	</style>
+
+    <style name="BASwitch" parent="Base.Widget.AppCompat.CompoundButton.Switch">
+        <item name="track">@drawable/switch_track_holo_dark</item>
+        <item name="switchTextAppearance">@android:style/TextAppearance.Small</item>
+        <item name="thumbTextPadding">12dip</item>
+        <item name="switchMinWidth">96dip</item>
+        <item name="switchPadding">16dip</item>
+        <item name="android:textColor">@color/main_fg</item>
+		<item name="showText">true</item>
+    </style>
+
+	<style name="BATheme" parent="AppTheme">
+		<item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+		<item name="android:textAppearance">@style/NormalText</item>
+		<!--<item name="android:windowActionBar">false</item>-->
+		<!--<item name="android:textColor">@color/main_fg</item>-->
+
+        <item name="switchStyle">@style/BASwitch</item>
+		<!--<item name="android:textViewStyle">@style/BATextView</item>-->
+        <item name="android:windowActionBarOverlay">true</item>
+		<item name="windowActionBarOverlay">true</item>
+        <!--<item name="android:actionBarStyle">@style/Theme.ActionBarSize</item>-->
+	</style>
+
+    <!--<style name="Theme.ActionBarSize" parent="android:Widget.Holo.ActionBar">-->
+        <!--<item name="android:background">#00FF0000</item>-->
+    <!--</style>-->
+</resources>

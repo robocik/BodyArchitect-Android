@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="fill_parent"  android:layout_height="fill_parent" android:id="@+id/tabHost" >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:tabStripEnabled="false">
+        </TabWidget>
+        <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1">
+            <ScrollView android:id="@+id/profile_edit_tab_info"
+                        android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout      android:orientation="vertical"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content" android:background="@color/semi_transparent_accent_color">
+                        <com.quasardevelopment.bodyarchitect.client.ui.controls.BAPicture
+                                android:id="@+id/image" android:layout_width="64dip" android:layout_height="64dip"
+                                android:layout_margin="3dip" android:adjustViewBounds="true" android:scaleType="centerCrop" />
+
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:id="@+id/tbUsername" android:textSize="@dimen/medium_large_font" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:id="@+id/tbEmail" android:textColor="@color/subtle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView style="@style/SmallLabel" android:text="@string/create_profile_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls"/>
+                    <Button android:id="@+id/btnBirthday" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+                    <TextView style="@style/SmallLabel" android:text="@string/create_profile_country" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls"/>
+                    <Button android:id="@+id/btnCountry" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+                    <TextView style="@style/SmallLabel" android:text="@string/profile_edit_activity_gender" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls"/>
+                    <RadioGroup  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true">
+                        <RadioButton
+                                android:id="@+id/rbMale"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Gender_Male"
+                                android:checked="true" />
+
+                        <RadioButton
+                                android:id="@+id/rbFemale"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Gender_Female" />
+                    </RadioGroup>
+
+                    <TextView style="@style/SmallLabel" android:text="@string/profile_edit_activity_about" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginTop="@dimen/margin_between_controls" android:layout_marginLeft="3dp"/>
+                    <EditText android:id="@+id/txtAbout" android:layout_width="fill_parent" android:hint="@string/profile_edit_activity_about_watermark" android:layout_height="100dip" android:inputType="textMultiLine"/>
+
+                    <TextView style="@style/SmallLabel" android:text="@string/create_profile_measurements" android:layout_width="wrap_content" android:layout_height="wrap_content"
+							  android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls"/>
+                    <RadioGroup  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true">
+                        <RadioButton
+                                android:id="@+id/rbMetric"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="@string/create_profile_metric"
+                                android:checked="true" />
+
+                        <RadioButton
+                                android:id="@+id/rbImperial"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="@string/create_profile_imperial" />
+
+                    </RadioGroup>
+
+                    <TextView android:layout_marginTop="@dimen/margin_between_headers" android:text="@string/profile_edit_activity_header_password" style="@style/HeaderStyle"/>
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/create_profile_password" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <EditText android:id="@+id/txtPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true"/>
+
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/create_profile_password_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <EditText android:id="@+id/txtConfirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true"/>
+
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@+id/profile_edit_tab_settings"
+                        android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout  android:orientation="vertical"
+                               android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView  android:text="@string/profile_edit_activity_header_privacy" style="@style/HeaderStyle"/>
+
+					<com.quasardevelopment.bodyarchitect.client.ui.controls.LabelAccountTypeAwarness android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" android:layout_marginRight="6dp" android:text="@string/profile_edit_activity_privacy_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cmbPrivacyCalendarEntries"/>
+
+					<com.quasardevelopment.bodyarchitect.client.ui.controls.LabelAccountTypeAwarness android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" android:layout_marginRight="6dp" android:text="@string/profile_edit_activity_privacy_sizes" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cmbPrivacyMeasurements"/>
+
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/profile_edit_activity_privacy_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cmbPrivacyFriends"/>
+
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/profile_edit_activity_privacy_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cmbPrivacyBirthday"/>
+
+
+                    <TextView android:layout_marginTop="24dp" android:text="@string/profile_edit_activity_header_notifications" style="@style/HeaderStyle"/>
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/profile_edit_activity_notification_friend_added_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:text="@string/profile_edit_activity_notification_by_message" android:id="@+id/chkNotificationMessageFriendAddedEntry" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <CheckBox android:layout_marginLeft="6dp" android:text="@string/profile_edit_activity_notification_by_email" android:id="@+id/chkNotificationEMailFriendAddedEntry" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/profile_edit_activity_notification_follower_added_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:text="@string/profile_edit_activity_notification_by_message" android:id="@+id/chkNotificationMessageFollowerAddedEntry" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <CheckBox android:layout_marginLeft="6dp" android:text="@string/profile_edit_activity_notification_by_email" android:id="@+id/chkNotificationEMailFollowerAddedEntry" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/profile_edit_activity_notification_someone_commented_your_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:text="@string/profile_edit_activity_notification_by_message" android:id="@+id/chkNotificationMessageDayCommented" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <CheckBox android:layout_marginLeft="6dp" android:text="@string/profile_edit_activity_notification_by_email" android:id="@+id/chkNotificationEMailDayCommented" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/profile_edit_activity_notification_someone_voted_your_plan" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:text="@string/profile_edit_activity_notification_by_message" android:id="@+id/chkNotificationMessageItemVoted" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <CheckBox android:layout_marginLeft="6dp" android:text="@string/profile_edit_activity_notification_by_email" android:id="@+id/chkNotificationEMailItemVoted" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" style="@style/SmallLabel" android:text="@string/profile_edit_activity_notification_all_social_events" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:text="@string/profile_edit_activity_notification_by_message" android:id="@+id/chkNotificationMessageSocialEvent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <CheckBox android:layout_marginLeft="6dp" android:text="@string/profile_edit_activity_notification_by_email" android:id="@+id/chkNotificationEMailSocialEvent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                    <TextView android:layout_marginTop="@dimen/margin_between_headers" android:text="@string/profile_edit_activity_header_misc" style="@style/HeaderStyle"/>
+                    <android.support.v7.widget.SwitchCompat android:layout_marginTop="@dimen/margin_between_controls" android:text="@string/profile_edit_activity_allow_comments" android:id="@+id/swAllowComments"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:layout_marginTop="6dp" android:textColor="@color/subtle" android:text="@string/profile_edit_activity_allow_comments_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@+id/profile_edit_tab_sizes"
+                        android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout  android:orientation="vertical"
+                               android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+                    <TextView android:text="@string/profile_edit_activity_header_automatic_updates" style="@style/HeaderStyle"/>
+                    <android.support.v7.widget.SwitchCompat android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/margin_between_controls" android:text="@string/profile_edit_activity_automatic_updates" android:id="@+id/swAutoUpdatesMeasurements"  android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:id="@+id/tbAutoUpdateDescription" android:layout_marginLeft="3dp" android:layout_marginTop="6dp" android:textColor="@color/subtle" android:visibility="gone" android:text="@string/profile_edit_activity_automatic_updates_description" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+
+                    <TextView android:layout_marginTop="@dimen/margin_between_headers" android:text="@string/profile_edit_activity_header_measurements" style="@style/HeaderStyle"/>
+                    <com.quasardevelopment.bodyarchitect.client.ui.controls.MeasurementsControl android:layout_marginTop="12dp"
+                            android:id="@+id/sizesCtrl" android:layout_marginLeft="3dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"/>
+
+                    <TextView android:layout_marginTop="24dp" android:id="@+id/tbHeaderMeasurementsTime" android:text="@string/profile_edit_activity_header_measurements_time" style="@style/HeaderStyle"/>
+                    <com.quasardevelopment.bodyarchitect.client.ui.controls.MeasurementsTimeControl  android:layout_marginTop="8dp" android:layout_marginLeft="3dp"
+                            android:id="@+id/sizesTimeCtrl"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+													android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</TabHost>

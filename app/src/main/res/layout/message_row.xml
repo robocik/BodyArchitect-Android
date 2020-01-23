@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.quasardevelopment.bodyarchitect.client.ui.controls.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+														android:orientation="horizontal"
+														android:layout_width="match_parent"
+														android:layout_height="match_parent">
+
+	<CheckedTextView  style="@style/ListItemChecker"
+					  android:layout_width="wrap_content" android:layout_height="fill_parent"
+					  android:layout_weight="0"
+					  android:gravity="center_vertical"/>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				  android:orientation="vertical"  android:background="@android:color/transparent"
+				  android:layout_width="match_parent"
+				  android:layout_height="match_parent">
+
+		<LinearLayout android:orientation="horizontal"  android:background="@color/semi_transparent_accent_color"
+					  android:layout_width="match_parent"
+					  android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginTop="6dp">
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.BAPicture style="@style/BAPicture"  android:id="@+id/imgUser"
+													android:layout_margin="12dp"/>
+
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+					  android:layout_marginTop="6dp">
+
+
+			<TextView android:id="@+id/tbTopic" android:layout_width="match_parent" android:textSize="@dimen/medium_font" android:layout_height="wrap_content"/>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+						  android:layout_marginTop="6dp">
+				<TextView android:id="@+id/tbUsername" android:textColor="@color/alternate_fg" android:textSize="@dimen/medium_font" android:layout_width="fill_parent" android:layout_height="wrap_content"
+						  android:layout_weight="1"/>
+				<TextView android:id="@+id/tbDateTime" android:textColor="@color/alternate_fg" android:textSize="@dimen/medium_font" android:layout_width="wrap_content" android:layout_height="wrap_content"
+						  android:layout_marginRight="6dp"/>
+			</LinearLayout>
+
+		</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</com.quasardevelopment.bodyarchitect.client.ui.controls.CheckableLinearLayout>

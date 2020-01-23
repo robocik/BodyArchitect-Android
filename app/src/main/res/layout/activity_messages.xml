@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto"
+		 android:layout_width="fill_parent"  android:layout_height="fill_parent" android:id="@+id/tabHost" >
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		<TabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+		</TabWidget>
+		<FrameLayout
+				android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_weight="1">
+			<LinearLayout android:id="@+id/messages_tab_messages" android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<TextView android:layout_marginTop="12dp" android:layout_marginLeft="8dp" android:id="@+id/tbEmptyMessages" android:text="@string/messages_activity_empty" android:textSize="@dimen/large_font" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+				<com.quasardevelopment.bodyarchitect.client.ui.controls.BAListView style="@style/BAListView"
+															 android:id="@+id/lstMessages"
+															 android:layout_width="fill_parent" android:layout_height="fill_parent"
+															 dslv:drag_enabled="false"  dslv:drag_handle_id="@id/drag_handle"/>
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/messages_tab_invitations" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:layout_marginTop="12dp" android:layout_marginLeft="8dp" android:id="@+id/tbEmptyInvitations" android:text="@string/messages_activity_invitations_empty" android:textSize="@dimen/large_font" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+
+                <ListView style="@style/BAListView" android:id="@+id/lstInvitations" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+			</LinearLayout>
+		</FrameLayout>
+
+
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+													android:layout_gravity="center_horizontal"/>
+	</LinearLayout>
+</TabHost>

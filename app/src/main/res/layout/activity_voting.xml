@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:paddingLeft="6dp" android:paddingRight="6dp"
+			  android:paddingBottom="6dp">
+      <TextView android:id="@+id/voting_activity_name" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="@dimen/large_font"/>
+
+
+    <TextView android:layout_marginTop="12dp" android:textColor="@color/subtle" android:layout_width="wrap_content"   android:textSize="@dimen/medium_font"
+              android:layout_height="wrap_content" android:text="@string/votings_activity_your_rating"/>
+    <RatingBar android:id="@+id/voting_activity_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="6"/>
+
+    <TextView android:textColor="@color/subtle" android:layout_width="wrap_content"   android:textSize="@dimen/medium_font"
+              android:layout_height="wrap_content" android:text="@string/comment" android:layout_marginTop="12dp"/>
+
+    <EditText android:id="@+id/voting_activity_comment" android:layout_width="fill_parent" android:hint="@string/comment_watermark" android:layout_height="100dip" android:inputType="textMultiLine"/>
+
+    <Button android:id="@+id/voting_activity_btn_save" android:text="@string/button_save" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"/>
+
+	<View android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="fill_parent"/>
+	<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+												android:layout_gravity="center_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_width="fill_parent" android:background="@color/main_bg"
+              android:layout_height="match_parent" android:orientation="vertical" android:paddingTop="45dp" android:id="@+id/pnlMain">
+
+    <ImageView android:src="@drawable/bodyarchitect" android:layout_width="wrap_content"
+               android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+               android:maxWidth="50dp" android:maxHeight="50dp" android:layout_weight="1"
+               android:adjustViewBounds="false" android:scaleType="fitCenter" android:layout_marginTop="45dp"/>
+
+
+    <LinearLayout android:id="@+id/Login_InputPane"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="-30dp">
+
+
+        <Button style="@style/LinkButton" android:textSize="@dimen/large_font" android:text="http://bodyarchitectonline.com" android:id="@+id/btnWebSite" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"/>
+
+        <Button style="@style/LinkButton" android:textSize="@dimen/large_font" android:text="@string/about_rate_and_review" android:id="@+id/btnRateReview" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"/>
+
+        <Button style="@style/LinkButton" android:textSize="@dimen/large_font" android:id="@+id/btnEmail" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left" android:text="@string/about_email"/>
+
+        <Button style="@style/LinkButton" android:text="Facebook" android:textSize="@dimen/large_font" android:id="@+id/btnFacebook" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/progressPane"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:orientation="vertical" >
+
+
+        <com.quasardevelopment.bodyarchitect.client.ui.controls.CompanyLogoControl android:layout_width="wrap_content"
+                                                             android:layout_height="59dp" android:layout_gravity="bottom|right" android:layout_marginTop="24dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

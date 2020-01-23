@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_width="fill_parent" android:background="@color/main_bg"
+              android:layout_height="match_parent" android:orientation="vertical" android:paddingTop="45dp" android:id="@+id/pnlMain">
+
+    <ImageView android:src="@drawable/bodyarchitect" android:layout_width="wrap_content"
+               android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+               android:maxWidth="50dp" android:maxHeight="50dp" android:layout_weight="1"    android:layout_marginTop="20dp"
+               android:adjustViewBounds="false" android:scaleType="fitCenter"/>
+    <LinearLayout android:id="@+id/Login_InputPane"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:orientation="vertical">
+
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cmbServers" />
+
+        <TextView  android:textSize="@dimen/large_font"
+                   android:text="@string/login_activity_lbl_username"
+                   android:textColor="@color/subtle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+        </TextView>
+
+        <EditText
+                android:text=""
+                android:id="@+id/txtUserName"
+				android:inputType="textNoSuggestions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+        </EditText>
+
+        <TextView  android:textSize="@dimen/large_font"
+                   android:text="@string/login_activity_lbl_password"
+                   android:textColor="@color/subtle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+        </TextView>
+
+
+        <EditText
+                android:text=""
+                android:id="@+id/txtPassword"
+				android:imeOptions="actionGo"
+				android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true">
+        </EditText>
+
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<Button
+					android:text="@string/login_activity_btn_login"
+					android:id="@+id/btnLogin"
+					android:minWidth="100dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:singleLine="true" android:layout_gravity="center">
+			</Button>
+			<View android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1"/>
+
+			<Button
+					android:text="@string/login_activity_menu_create_account"
+					style="@style/LinkButton"
+					android:id="@+id/btnRegister"
+					android:minWidth="100dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:singleLine="true" android:layout_gravity="center">
+			</Button>
+		</LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/progressPane"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar" android:layout_gravity="center" android:indeterminate="true"/>
+        <TextView
+                android:text="progress"
+                android:id="@+id/tbProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center">
+        </TextView>
+
+
+        <com.quasardevelopment.bodyarchitect.client.ui.controls.CompanyLogoControl android:layout_width="wrap_content"
+            android:layout_height="79dp" android:layout_gravity="bottom|right" android:layout_marginTop="40dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

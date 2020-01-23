@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width="match_parent" android:descendantFocusability="blocksDescendants"
+			  android:layout_height="match_parent">
+	<LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+		<ImageButton style="@style/FlatImageButton" android:focusableInTouchMode="false" android:focusable="false" android:id="@+id/btnAddExercise"  android:src="@drawable/content_new" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="vertical" android:layout_width="match_parent"  android:layout_height="match_parent">
+		 <TextView android:textStyle="bold" android:text="(exercise name)" android:id="@+id/elv_exercise_name_tb" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+		<LinearLayout android:layout_weight="1" android:orientation="horizontal" android:layout_width="match_parent"  android:layout_height="match_parent">
+			<ImageView android:id="@+id/elv_exercise_publish_status_img"  android:layout_width="16dip" android:layout_height="16dip" android:src="@drawable/records32" />
+			<TextView android:layout_marginLeft="6dp" android:text="(exercise shortcut)" android:id="@+id/elv_exercise_shortcut_tb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/accent_color"/>
+
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

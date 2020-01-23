@@ -1,0 +1,98 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quasardevelopment.bodyarchitect"
+    android:versionCode="14"
+    android:versionName="1.0.2.2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+
+    <application android:name="com.quasardevelopment.bodyarchitect.client.ui.MyApplication"
+        android:allowBackup="true"  android:largeHeap="true"
+        android:icon="@drawable/ba_logo"
+        android:logo="@drawable/ba_action_bar"
+        android:label="@string/html_app_name"
+        android:theme="@style/BATheme">
+
+        <uses-library android:name="com.google.android.maps"/>
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="api key" />
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.LoginActivity" android:theme="@style/LoginTheme" android:configChanges="orientation|keyboardHidden|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/StyledIndicators" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.SettingsActivity" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.CalendarView" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.TrainingDaySelectorActivity"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.StrengthTrainingActivity" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.StrengthWorkoutItemActivity" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.SetActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.ExerciseSelectorActivity" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.ExerciseDetailActivity" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.VotingActivity" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.CardioTrainingItemActivity" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.CardioSetActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.StrengthTrainingOptionsActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.SupplementsActivity"  android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.SupplementSelectorActivity"  android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.SupplementItemActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.StrengthTrainingItemOptionsActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.MeasurementsActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.CreateProfileActivity"  android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.CountrySelector" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.ProfileEditActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.MessagesActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.MessageViewActivity"  android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.SendMessageActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.PeopleActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.ProfileInfoActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.InvitationViewActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.StatisticsActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.WorkoutPlansActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.WorkoutPlanInfoActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.WorkoutPlanEntryActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.BodyInstructorActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.CustomerInfoActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.AccountTypeActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.AccountTypeDescriptionActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.GPSTrackerActivity"  android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.MapActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.SynchronizationActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.UnhandledErrorActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.TipsTricksActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.MoreInfoActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+        <activity android:name="com.quasardevelopment.bodyarchitect.client.ui.activities.AboutActivity" android:screenOrientation="portrait" android:theme="@style/AboutTheme" android:configChanges="orientation|keyboardHidden|screenSize" />
+
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <service
+            android:name="com.quasardevelopment.bodyarchitect.client.ui.services.ActivityRecognitionIntentService"
+            android:label="@string/app_name"
+            android:exported="false">
+        </service>
+
+        <service
+            android:name="com.quasardevelopment.bodyarchitect.client.ui.services.GPSTrackerService"
+            android:label="@string/app_name"	>
+        </service>
+    </application>
+
+</manifest>

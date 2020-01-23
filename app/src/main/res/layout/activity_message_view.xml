@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+				  android:layout_width="match_parent"
+				  android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"
+				  android:layout_marginBottom="8dp">
+		  <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+			  <com.quasardevelopment.bodyarchitect.client.ui.controls.BAPicture style="@style/BAPicture"  android:id="@+id/imgUser"/>
+			  <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+				  <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+					  <TextView android:id="@+id/tbUsername" android:text="(user name)" android:textSize="@dimen/extra_large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_marginLeft="8dp"/>
+					  <ImageView android:id="@+id/imgPriority" android:layout_width="32dp" android:layout_height="32dp" android:layout_alignParentRight="true"/>
+				  </RelativeLayout>
+				  <TextView android:id="@+id/tbDateTime" android:text="(datetime)"  android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:gravity="right"/>
+			  </LinearLayout>
+		  </LinearLayout>
+
+		<TextView  android:text="@string/message_view_activity_topic" android:textColor="@color/accent_color" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"
+				   android:layout_marginTop="24dp"/>
+		<TextView  android:text="(topic)" android:id="@+id/tbTopic" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+		<TextView  android:text="@string/message_view_activity_content" android:textColor="@color/accent_color" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content"
+				   android:layout_marginTop="24dp"/>
+		<TextView  android:text="(content)" android:id="@+id/tbContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_height="wrap_content"
+												android:layout_alignParentBottom="true"
+												android:layout_centerHorizontal="true"/>
+</RelativeLayout>

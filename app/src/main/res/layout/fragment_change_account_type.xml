@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"	android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout
+				  android:orientation="vertical"
+				  android:layout_width="match_parent"
+				  android:layout_height="match_parent">
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.AccountTypeControl android:id="@+id/ctrlBasic" android:layout_width="fill_parent" android:layout_height="@dimen/account_type_height"
+															 android:layout_weight="1"/>
+
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.AccountTypeControl android:id="@+id/ctrlPremium" android:layout_width="fill_parent" android:layout_height="@dimen/account_type_height"
+															 android:layout_weight="1"/>
+
+		<com.quasardevelopment.bodyarchitect.client.ui.controls.AccountTypeControl android:id="@+id/ctrlInstructor" android:layout_width="fill_parent" android:layout_height="@dimen/account_type_height"
+															 android:layout_weight="1"/>
+	</LinearLayout>
+</ScrollView>

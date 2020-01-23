@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	<TextView android:text="@string/create_profile_welcome"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView android:text="@string/html_app_name" android:textSize="40sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"/>
+
+	<ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+		<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+			<TextView  android:text="@string/create_profile_header_profile" style="@style/HeaderStyle"/>
+
+
+			<TextView  android:text="@string/login_activity_lbl_username" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"
+                       android:layout_marginLeft="24dp"/>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<LinearLayout android:layout_width="15dp" android:layout_height="42dp" android:background="@color/semi_transparent_accent_color"
+                              android:layout_marginRight="6dp" android:layout_marginBottom="6dp"/>
+				<EditText android:singleLine="true" android:id="@+id/txtUsername" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"
+                          android:layout_gravity="center_vertical"/>
+                <ImageButton style="@style/FlatImageButton" android:id="@+id/btnCheckUsernameAvailable" android:src="@android:drawable/ic_menu_search" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_gravity="center_vertical"/>
+			</LinearLayout>
+
+			<TextView  android:text="@string/create_profile_email" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"
+                       android:layout_marginLeft="24dp"/>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<LinearLayout android:layout_width="15dp" android:layout_height="42dp" android:background="@color/semi_transparent_accent_color"
+                              android:layout_marginRight="6dp" android:layout_marginBottom="6dp"/>
+				<EditText android:inputType="textEmailAddress" android:id="@+id/txtEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+			</LinearLayout>
+
+			<TextView  android:text="@string/create_profile_birthday" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"
+                       android:layout_marginLeft="24dp"/>
+			<Button android:focusable="true" android:id="@+id/btnBirthday" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp" android:text="@string/create_profile_empty_birthday"/>
+
+			<RadioGroup android:layout_marginLeft="22dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true">
+				<RadioButton
+						android:id="@+id/rbMale"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:text="@string/create_profile_male"
+						android:checked="true" />
+
+				<RadioButton
+						android:id="@+id/rbFemale"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+                        android:text="@string/create_profile_female" />
+
+			</RadioGroup>
+
+			<TextView android:text="@string/create_profile_country" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"
+                       android:layout_marginLeft="24dp"/>
+			<Button  android:id="@+id/btnCountry" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp" android:text="@string/create_profile_empty_country"/>
+
+			<TextView android:text="@string/create_profile_measurements" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"
+                       android:layout_marginLeft="24dp"/>
+			<RadioGroup  android:layout_width="fill_parent" android:layout_marginLeft="22dp" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true">
+				<RadioButton
+						android:id="@+id/rbMetric"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+                        android:text="@string/create_profile_metric"
+						android:checked="true"/>
+
+				<RadioButton
+						android:id="@+id/rbImperial"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+                        android:text="@string/create_profile_imperial" />
+
+			</RadioGroup>
+
+			<TextView android:text="@string/create_profile_header_password" style="@style/HeaderStyle"
+                      android:layout_marginTop="15dp" />
+			<TextView android:layout_marginLeft="22dp" android:text="@string/create_profile_password" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+			<EditText android:layout_marginLeft="22dp" android:singleLine="true" android:imeOptions="actionNext" android:id="@+id/txtPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true"/>
+			<TextView  android:layout_marginLeft="22dp" android:text="@string/create_profile_password_confirm" android:textSize="@dimen/large_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/subtle"/>
+			<EditText android:layout_marginLeft="22dp" android:singleLine="true" android:imeOptions="actionGo" android:id="@+id/txtConfirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true"/>
+
+			<Button android:id="@+id/btnCreateProfile" android:text="@string/create_profile_btn_create" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+			<TextView android:id="@+id/create_profile_terms_of_service" android:linksClickable="true" android:text="@string/create_profile_terms_of_service" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

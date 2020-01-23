@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:background="@color/main_bg"  android:id="@+id/pnlMain">
+
+
+
+	<com.quasardevelopment.bodyarchitect.client.ui.controls.ViewPagerParallax
+			android:id="@+id/pager"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1" android:paddingTop="@dimen/margin_main_view_pager_top" android:layout_above="@+id/ctrlAd">
+
+	</com.quasardevelopment.bodyarchitect.client.ui.controls.ViewPagerParallax>
+	<com.viewpagerindicator.TitlePageIndicator android:layout_marginTop="@dimen/margin_main_title_indicator_top" android:id="@+id/indicator"
+											  android:layout_height="wrap_content" style="@style/CustomTitlePageIndicator"
+											  android:layout_width="fill_parent" android:focusable="false" />
+
+	<com.quasardevelopment.bodyarchitect.client.ui.controls.AdControl android:id="@+id/ctrlAd" android:layout_width="wrap_content" android:layout_alignParentRight="false" android:layout_alignParentEnd="false" android:layout_alignParentBottom="true"
+												android:layout_height="wrap_content"
+												android:layout_centerHorizontal="true"/>
+</RelativeLayout>

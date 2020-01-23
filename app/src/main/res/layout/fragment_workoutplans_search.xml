@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+              android:padding="6dp">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+				 android:baselineAligned="false" android:measureWithLargestChild="false">
+        <TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+            <TextView android:textColor="@color/subtle" android:layout_width="wrap_content" android:text="@string/workout_plans_search_plan_type"/>
+            <Spinner android:layout_width="fill_parent"  android:id="@+id/cmbTrainingType"/>
+        </TableRow>
+        <TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp">
+            <TextView android:textColor="@color/subtle" android:layout_width="wrap_content" android:text="@string/workout_plans_search_plan_purpose"/>
+            <Spinner android:layout_width="fill_parent" android:id="@+id/cmbPurpose"/>
+        </TableRow>
+        <TableRow  android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp">
+            <TextView android:textColor="@color/subtle" android:layout_width="wrap_content" android:text="@string/workout_plans_search_plan_difficult"/>
+            <Spinner android:layout_width="fill_parent" android:id="@+id/cmbDifficult"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView  android:layout_height="wrap_content" android:textColor="@color/subtle" android:layout_width="wrap_content" android:text="@string/workout_plans_search_plan_order_by"
+               android:layout_marginTop="12dp"/>
+    <RadioGroup  android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true"
+				 android:layout_weight="1" android:measureWithLargestChild="true">
+        <RadioButton
+                android:id="@+id/rbTopRated"
+                android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+                android:text="@string/workout_plans_search_order_by_top_rated"
+                android:checked="true" />
+
+        <RadioButton
+                android:id="@+id/rbNewest"
+                android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+                android:text="@string/workout_plans_search_order_by_newest" />
+
+    </RadioGroup>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal" android:layout_marginTop="24dp">
+        <Button android:text="@android:string/cancel" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                android:layout_weight="1" android:id="@+id/btnCancel"/>
+        <Button android:text="@string/button__big_search" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                android:layout_weight="1" android:id="@+id/btnOK"/>
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
